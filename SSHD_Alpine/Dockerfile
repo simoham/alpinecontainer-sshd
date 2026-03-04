@@ -1,7 +1,7 @@
 FROM alpine:3.23.3
 
 RUN apk update
-RUN apk add --no-cache openssh-server
+RUN apk add --no-cache openssh-server lsof fish
 RUN ssh-keygen -A
 
 #RUN ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -q -N ""
