@@ -1,0 +1,7 @@
+Please don't forget to modify max body upload in nginx.conf
+
+http {
+	...
+	        client_max_body_size 500M;
+	...
+}
